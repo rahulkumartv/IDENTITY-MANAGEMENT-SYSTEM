@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>IamWeb</title>
+</head>
+<body>
+	<h1>Welcome to the IamWeb Application</h1>
+	<form action="create" method="POST" >
+	<h2>New Identity Creation</h2>
+		<table >
+			<tbody>
+				<tr>
+					<td><label for="displayName">Diplay Name *</label></td>
+					<td><input name="displayName" /></td>
+				</tr>
+				<tr>
+					<td><label for="emailAddress">Email Address *</label></td>
+					<td><input name="emailAddress" type="email" /></td>
+				</tr>
+				<tr>
+					<td><label for="birthDate">Birth Date</label></td>
+					<td><input name="birthDate" type="date"/></td>
+				</tr>
+			</tbody>
+		</table>
+		<input value="Submit"type="submit" />
+	</form>
+	<form action="search" method="POST" >
+	<h2>Identity Search</h2>
+		<table >
+			<tbody>
+				<tr>
+					<td><label for="displayName">Diplay Name *</label></td>
+					<td><input name="displayName" /></td>
+				</tr>
+				<tr>
+					<td><label for="emailAddress">Email Address *</label></td>
+					<td><input name="emailAddress" type="email" /></td>
+				</tr>
+			</tbody>
+		</table>
+		<input value="Submit"type="submit" />
+	</form>
+	<div class="container">
+        <h3 class="text-info">Search Results</h3>
+
+        <form class="form-horizontal">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Selection</th>
+                        <th>UID</th>
+                        <th>Display Name</th>
+                        <th>Email</th>
+                        <th>BrithDate</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input name="selection" type="radio"/></td>
+                        <td>1</td>
+                        <td>Thomas</td>
+                        <td>Broussard</td>
+                        <td>tbr@acompany.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><input name="selection" type="radio"/></td>
+                        <td>2</td>
+                        <td>David</td>
+                        <td>Mahery</td>
+                        <td>dma@acompany.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><input name="selection" type="radio"/></td>
+                        <td>3</td>
+                        <td>Quentin</td>
+                        <td>Serrano</td>
+                        <td>qse@acompany.com</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-group">
+                <div class=" col-sm-offset-2 col-sm-10 text-right">
+                    <button type="submit" class="btn btn-primary">Modify</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+	
+</body>
+</html>
